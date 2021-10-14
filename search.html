@@ -130,6 +130,14 @@
             return (Math.abs(x1 - x2) + Math.abs(y1 - y2))
 
         }
+        function newGame() {
+            let clickCount = 0
+            animalLocation = Math.random(0, 24)
+            for (let i = 0; i < 24; i++) {
+                document.getElementById(ids[i]).src = "./images/Plant.jpg"
+            }
+            document.getElementById("tries").innerHTML = "Number of clicks is " + clickCount
+        }
     </script>
 </body>
 
